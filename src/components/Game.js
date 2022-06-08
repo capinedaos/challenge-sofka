@@ -7,9 +7,8 @@ const Game = () => {
   const [score, setScore] = useState(0);
   const [isFinished, setIsFinished] = useState(false);
   const [random, setRandom] = useState(0);
-  const [inputName, setInputName] = useState("");
-
-  console.log(score);
+  const [nameUser, setNameUser] = useState("");
+  const [botonActivo, setBotonActivo] = useState(true);
 
   useEffect(() => {
     const randomQuestions = Math.floor(Math.random() * 5);
@@ -17,7 +16,6 @@ const Game = () => {
   }, []);
 
   const handeAnswerSubmit = (thatsRight, e) => {
-    e.target.classList.remove("options");
     e.target.classList.add(thatsRight ? "correct" : "incorrect");
 
     setTimeout(() => {
@@ -41,13 +39,27 @@ const Game = () => {
   };
 
   const handleInputChange = (e) => {
-    const name = e.target.value;
-    setInputName(name);
-    console.log(inputName);
+    const text = e.target.value;
+    setNameUser(text);
+    console.log(nameUser);
   };
 
   const saveData = () => {
-    localStorage.setItem("nombre", inputName);
+    setBotonActivo(false);
+    setNameUser("");
+    let user = {
+      name: nameUser,
+      score: score,
+    };
+    createNewUser(user);
+  };
+
+  const createNewUser = (user) => {
+    let myUserArray = JSON.parse(localStorage.getItem("users"));
+    myUserArray.push(user);
+    let usersJSON = JSON.stringify(myUserArray);
+    localStorage.setItem("users", usersJSON);
+    alert("Registro guardado");
   };
 
   if (isFinished)
@@ -62,9 +74,13 @@ const Game = () => {
           <input
             type="text"
             placeholder="Ingresa tu nombre"
+            value={nameUser}
             onChange={handleInputChange}
           />
-          <button onClick={saveData}> Save</button>
+          <button onClick={saveData} disabled={!botonActivo}>
+            {" "}
+            <i className="fa-solid fa-floppy-disk"></i>
+          </button>
         </div>
 
         <button onClick={() => (window.location.href = "/")}>

@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
+import { v4 as uuidv4 } from "uuid";
 
 const Statistics = () => {
-  const [name, setName] = useState("");
-  const [score, setsCore] = useState("");
+  const [users, setUsers] = useState([]);
 
   const getData = () => {
-    return localStorage.getItem("nombre", "score");
+    const usersObject = JSON.parse(localStorage.getItem("users"));
+    return usersObject;
   };
 
   useEffect(() => {
-    setName(getData());
-    setsCore(getData());
+    setUsers(getData());
   }, []);
 
   return (
@@ -18,11 +18,15 @@ const Statistics = () => {
       <div className="container">
         <div className="container-help">
           <h1>Statistics</h1>
-          <div>
-            <p>
-              Name:{name} Score:{score}{" "}
-            </p>
-          </div>
+
+          {users.map((user) => (
+            <div key={uuidv4()}>
+              <p key={uuidv4()}>
+                Name: {user.name} Score:{user.score}{" "}
+              </p>
+            </div>
+          ))}
+
           <button onClick={() => (window.location.href = "/")}>
             <i className="fa-solid fa-house"></i>
           </button>
