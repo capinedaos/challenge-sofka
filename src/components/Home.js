@@ -5,22 +5,25 @@ import "../assets/style/Home.css";
 const Home = () => {
   return (
     <div className="container">
-      <div className="title">
-        <h1>Quien quiere ser millonario !!!</h1>
-      </div>
       <div className="container-home">
         <h1>Home</h1>
         <button>
           <i className="fa-solid fa-gamepad"></i>
-          <span>
-            <Link to="/game" className="link">
-              Juego nuevo
-            </Link>
-          </span>
+          <Link to="/game" className="link">
+            <span>Start Game</span>
+          </Link>
         </button>
         <button>
           <i className="fa-solid fa-user"></i>
-          <span>Estadistica</span>
+          <Link to="/statistics" className="link">
+            <span>Statistics</span>
+          </Link>
+        </button>
+        <button>
+          <i className="fa-solid fa-circle-question"></i>
+          <Link to="/help" className="link">
+            <span>Help</span>
+          </Link>
         </button>
       </div>
     </div>
