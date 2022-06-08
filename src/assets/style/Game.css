@@ -1,0 +1,62 @@
+.game {
+  background-color: #9370db;
+  width: 30rem;
+  min-height: 30rem;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+}
+
+.options button {
+  color: #fff;
+  text-align: left;
+  padding: 0.5rem;
+}
+
+.options i {
+  font-size: 15px;
+  margin: 1rem;
+}
+
+/* .options button:hover {
+  background-color: #ffa500;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 1);
+  font-size: 25px;
+  color: #000;
+} */
+
+.game h1 {
+  text-transform: capitalize;
+  background-color: #6a5acd;
+  padding: 1rem;
+}
+
+.game p {
+  color: #fff;
+  font-size: 25px;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+.correct,
+.correct:focus {
+  background-color: #2f922f;
+}
+
+.incorrect,
+.incorrect:focus {
+  background-color: #ff3333;
+}
+
+.exit {
+  margin-bottom: 1rem;
+}
+
+.exit:hover {
+  background-color: #fff;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 1);
+  font-size: 25px;
+  color: #000;
+}

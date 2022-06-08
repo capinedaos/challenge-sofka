@@ -1,0 +1,581 @@
+[
+  {
+    "title": "Primeda ronda",
+    "options": [
+      {
+        "id": 1,
+        "question": "De acuerdo con la cancion, a la cucaracha le faltaba",
+        "responses": [
+          {
+            "response": "A: Una cabeza para pensar",
+            "thats-right": false
+          },
+          {
+            "response": "B: Una pata para andar",
+            "thats-right": true
+          },
+          {
+            "response": "C: Un corazón para amar",
+            "thats-right": false
+          },
+          {
+            "response": "D: Unas firmas para repechar",
+            "thats-right": false
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "question": "Cual de estas frutas debe necesariamente ser pelada para ser consumida",
+        "responses": [
+          {
+            "response": "A: La pera",
+            "thats-right": false
+          },
+          {
+            "response": "B: La manzana",
+            "thats-right": false
+          },
+          {
+            "response": "C: La uva",
+            "thats-right": false
+          },
+          {
+            "response": "D: La piña",
+            "thats-right": true
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "question": "Las técnicas de grabado e impresión pertenecen a las artes",
+        "responses": [
+          {
+            "response": "A: Marciales",
+            "thats-right": false
+          },
+          {
+            "response": "B: Escénicas",
+            "thats-right": false
+          },
+          {
+            "response": "C: Musicales",
+            "thats-right": false
+          },
+          {
+            "response": "D: Graficas",
+            "thats-right": true
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "question": "Hacer un catorce significa",
+        "responses": [
+          {
+            "response": "A: Hacer un desplante",
+            "thats-right": false
+          },
+          {
+            "response": "B: Hacer un cumplido",
+            "thats-right": false
+          },
+          {
+            "response": "C: Hacer un favor",
+            "thats-right": true
+          },
+          {
+            "response": "D: Hacer un envió",
+            "thats-right": false
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "question": "Romperle la cintura a un futbolista quiere decir",
+        "responses": [
+          {
+            "response": "A: Enviarlo a la enfermería",
+            "thats-right": false
+          },
+          {
+            "response": "B: Evitarlo con un amague",
+            "thats-right": true
+          },
+          {
+            "response": "C: No darle ni gota de agua",
+            "thats-right": false
+          },
+          {
+            "response": "D: Dejarlo sentado en la banca",
+            "thats-right": false
+          }
+        ]
+      }
+    ]
+  },
+
+  {
+    "title": "Segunda ronda",
+    "options": [
+      {
+        "id": 1,
+        "question": "Como se le dice a algo que se da gratuitamente",
+        "responses": [
+          {
+            "response": "A: Formalismo",
+            "thats-right": false
+          },
+          {
+            "response": "B: Dadiva",
+            "thats-right": true
+          },
+          {
+            "response": "C: Gesto",
+            "thats-right": false
+          },
+          {
+            "response": "D: Lagarteo",
+            "thats-right": false
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "question": "En el titular de un periódico debe estar",
+        "responses": [
+          {
+            "response": "A: La síntesis de la información",
+            "thats-right": true
+          },
+          {
+            "response": "B: La firma del periodista investigador",
+            "thats-right": false
+          },
+          {
+            "response": "C: Las recomendaciones para el lector",
+            "thats-right": false
+          },
+          {
+            "response": "D: Las fuentes plenamente identificadas",
+            "thats-right": false
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "question": "Una de estas cadenas de estaciones de servicio es colombiana",
+        "responses": [
+          {
+            "response": "A: Texaco",
+            "thats-right": false
+          },
+          {
+            "response": "B: Petrobas",
+            "thats-right": false
+          },
+          {
+            "response": "C: Esso",
+            "thats-right": false
+          },
+          {
+            "response": "D: Brío",
+            "thats-right": true
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "question": "Cual de los siguientes no es una prueba olímpica",
+        "responses": [
+          {
+            "response": "A: El tenis de dobles",
+            "thats-right": false
+          },
+          {
+            "response": "B: Los 100 metros planos",
+            "thats-right": false
+          },
+          {
+            "response": "C: El nado sincronizado",
+            "thats-right": true
+          },
+          {
+            "response": "D: La pelota vasca",
+            "thats-right": false
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "question": "Cual era la particularidad de Charlie, el de la serie de televisión 'Los Ángeles de Charlie'",
+        "responses": [
+          {
+            "response": "A: Que era muy alto",
+            "thats-right": false
+          },
+          {
+            "response": "B: Que nunca apareció en la serie",
+            "thats-right": true
+          },
+          {
+            "response": "C: Que llevaba un monóculo",
+            "thats-right": false
+          },
+          {
+            "response": "D: Que caminaba con un bastón",
+            "thats-right": false
+          }
+        ]
+      }
+    ]
+  },
+
+  {
+    "title": "Tercera ronda",
+    "options": [
+      {
+        "id": 1,
+        "question": "De que color de ve la Estatua de la Libertad actualmente",
+        "responses": [
+          {
+            "response": "A: Blanco",
+            "thats-right": false
+          },
+          {
+            "response": "B: Negro",
+            "thats-right": false
+          },
+          {
+            "response": "C: Verde azuloso",
+            "thats-right": true
+          },
+          {
+            "response": "D: Violeta",
+            "thats-right": false
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "question": "Como se le dice al tomate en México",
+        "responses": [
+          {
+            "response": "A: Ají",
+            "thats-right": false
+          },
+          {
+            "response": "B: Tomatin",
+            "thats-right": false
+          },
+          {
+            "response": "C: Jitomate",
+            "thats-right": true
+          },
+          {
+            "response": "D: Tomatón",
+            "thats-right": false
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "question": "El avión Boeing 747 también se conoce con el nombre de",
+        "responses": [
+          {
+            "response": "A: Concorde",
+            "thats-right": false
+          },
+          {
+            "response": "B: Super Guppy",
+            "thats-right": false
+          },
+          {
+            "response": "C: B52-H",
+            "thats-right": false
+          },
+          {
+            "response": "D: Jumbo",
+            "thats-right": true
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "question": "Un galápago es",
+        "responses": [
+          {
+            "response": "A: Un reptil",
+            "thats-right": true
+          },
+          {
+            "response": "B: Un ave",
+            "thats-right": false
+          },
+          {
+            "response": "C: Un mamífero",
+            "thats-right": false
+          },
+          {
+            "response": "D: Un insecto",
+            "thats-right": false
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "question": "Una batería genera energía eléctrica a partir de que tipo de energía",
+        "responses": [
+          {
+            "response": "A: Cinética",
+            "thats-right": false
+          },
+          {
+            "response": "B: Acústica",
+            "thats-right": true
+          },
+          {
+            "response": "C: Química",
+            "thats-right": true
+          },
+          {
+            "response": "D: Mecánica",
+            "thats-right": false
+          }
+        ]
+      }
+    ]
+  },
+
+  {
+    "title": "Cuarta ronda",
+    "options": [
+      {
+        "id": 1,
+        "question": "Que ciudad de Estados Unidos queda cruzando el Rio Grande desde ciudad Juárez",
+        "responses": [
+          {
+            "response": "A: Houston",
+            "thats-right": false
+          },
+          {
+            "response": "B: El paso",
+            "thats-right": true
+          },
+          {
+            "response": "C: San Diego",
+            "thats-right": false
+          },
+          {
+            "response": "D: La Vegas",
+            "thats-right": false
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "question": "Lucia di Lammermoor es",
+        "responses": [
+          {
+            "response": "A: Una cantante popular",
+            "thats-right": false
+          },
+          {
+            "response": "B: Una opera",
+            "thats-right": true
+          },
+          {
+            "response": "C: Una reina europea",
+            "thats-right": false
+          },
+          {
+            "response": "D: Una diseñadora de modas",
+            "thats-right": false
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "question": "Antes del peso la moneda colombiana era",
+        "responses": [
+          {
+            "response": "A: Talero",
+            "thats-right": false
+          },
+          {
+            "response": "B: Florín",
+            "thats-right": false
+          },
+          {
+            "response": "C: Colombiano",
+            "thats-right": false
+          },
+          {
+            "response": "D: Real",
+            "thats-right": true
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "question": "Este dictador asiático murió en enero del 2008",
+        "responses": [
+          {
+            "response": "A: Suharto",
+            "thats-right": true
+          },
+          {
+            "response": "B: Idi Amin",
+            "thats-right": false
+          },
+          {
+            "response": "C: Sumitomo",
+            "thats-right": false
+          },
+          {
+            "response": "D: Jo Chi Ming",
+            "thats-right": false
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "question": "Es el nombre de pila de Don Jediendo",
+        "responses": [
+          {
+            "response": "A: Jorge Lozano",
+            "thats-right": false
+          },
+          {
+            "response": "B: Juan Gutiérrez",
+            "thats-right": false
+          },
+          {
+            "response": "C: Pablo Rodríguez",
+            "thats-right": false
+          },
+          {
+            "response": "D: Pedro González",
+            "thats-right": true
+          }
+        ]
+      }
+    ]
+  },
+
+  {
+    "title": "Quinta ronda",
+    "options": [
+      {
+        "id": 1,
+        "question": "Ludwing van Beethoven se caso",
+        "responses": [
+          {
+            "response": "A: Una vez",
+            "thats-right": false
+          },
+          {
+            "response": "B: Dos veces",
+            "thats-right": false
+          },
+          {
+            "response": "C: Tres veces",
+            "thats-right": false
+          },
+          {
+            "response": "D: Nunca",
+            "thats-right": true
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "question": "Los sucesores de Alejandro Magno en Egipto conformaron la dinastía",
+        "responses": [
+          {
+            "response": "A: Sarracena",
+            "thats-right": false
+          },
+          {
+            "response": "B: Filipina",
+            "thats-right": false
+          },
+          {
+            "response": "C: Ptolemaica",
+            "thats-right": true
+          },
+          {
+            "response": "D: Alejandría",
+            "thats-right": false
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "question": "En el Ejercito Nacional de Colombia, EAS es la abreviación de",
+        "responses": [
+          {
+            "response": "A: Escuela de Armas y Soldados",
+            "thats-right": false
+          },
+          {
+            "response": "B: Escuela de Armamento y Seguridad",
+            "thats-right": false
+          },
+          {
+            "response": "C: Escuela de Armas y Servicios",
+            "thats-right": true
+          },
+          {
+            "response": "D: Escuela de Anti-Secuestro",
+            "thats-right": false
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "question": "La floritura es un termino principalmente",
+        "responses": [
+          {
+            "response": "A: Musical",
+            "thats-right": true
+          },
+          {
+            "response": "B: Político",
+            "thats-right": false
+          },
+          {
+            "response": "C: Deportivo",
+            "thats-right": false
+          },
+          {
+            "response": "D: Taurino",
+            "thats-right": false
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "question": "A estos estado europeos se les permite usar el euro bajo acuerdo especial con la unión Europea",
+        "responses": [
+          {
+            "response": "A: Rumania y Suecia",
+            "thats-right": false
+          },
+          {
+            "response": "B: Polonia y Turquía",
+            "thats-right": false
+          },
+          {
+            "response": "C: Inglaterra y Escocia",
+            "thats-right": false
+          },
+          {
+            "response": "D: San Marino y Mónaco",
+            "thats-right": true
+          }
+        ]
+      }
+    ]
+  }
+]
