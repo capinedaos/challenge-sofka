@@ -1,10 +1,10 @@
 [
   {
-    "title": "Primeda ronda",
+    "title": "Primera ronda",
     "options": [
       {
         "id": 1,
-        "question": "De acuerdo con la cancion, a la cucaracha le faltaba",
+        "question": "De acuerdo con la canción, a la cucaracha le faltaba",
         "responses": [
           {
             "response": "A: Una cabeza para pensar",
@@ -26,7 +26,7 @@
       },
       {
         "id": 2,
-        "question": "Cual de estas frutas debe necesariamente ser pelada para ser consumida",
+        "question": "Cuál de estas frutas debe necesariamente ser pelada para ser consumida",
         "responses": [
           {
             "response": "A: La pera",
@@ -59,12 +59,12 @@
             "thats-right": false
           },
           {
-            "response": "C: Musicales",
-            "thats-right": false
+            "response": "C: Graficas",
+            "thats-right": true
           },
           {
-            "response": "D: Graficas",
-            "thats-right": true
+            "response": "D: Musicales",
+            "thats-right": false
           }
         ]
       },
@@ -73,19 +73,19 @@
         "question": "Hacer un catorce significa",
         "responses": [
           {
-            "response": "A: Hacer un desplante",
-            "thats-right": false
-          },
-          {
-            "response": "B: Hacer un cumplido",
-            "thats-right": false
-          },
-          {
-            "response": "C: Hacer un favor",
+            "response": "A: Hacer un favor",
             "thats-right": true
           },
           {
-            "response": "D: Hacer un envió",
+            "response": "B: Hacer un envió",
+            "thats-right": false
+          },
+          {
+            "response": "C: Hacer un desplante",
+            "thats-right": false
+          },
+          {
+            "response": "D: Hacer un cumplido",
             "thats-right": false
           }
         ]
@@ -171,7 +171,7 @@
             "thats-right": false
           },
           {
-            "response": "B: Petrobas",
+            "response": "B: Petrobras",
             "thats-right": false
           },
           {
@@ -236,7 +236,7 @@
     "options": [
       {
         "id": 1,
-        "question": "De que color de ve la Estatua de la Libertad actualmente",
+        "question": "De que color se ve la Estatua de la Libertad actualmente",
         "responses": [
           {
             "response": "A: Blanco",
@@ -261,16 +261,16 @@
         "question": "Como se le dice al tomate en México",
         "responses": [
           {
-            "response": "A: Ají",
-            "thats-right": false
-          },
-          {
-            "response": "B: Tomatin",
-            "thats-right": false
-          },
-          {
-            "response": "C: Jitomate",
+            "response": "A: Jitomate",
             "thats-right": true
+          },
+          {
+            "response": "B: Ají",
+            "thats-right": false
+          },
+          {
+            "response": "C: Tomatin",
+            "thats-right": false
           },
           {
             "response": "D: Tomatón",
@@ -324,7 +324,7 @@
       },
       {
         "id": 5,
-        "question": "Una batería genera energía eléctrica a partir de que tipo de energía",
+        "question": "Una batería genera energía eléctrica a partir de qué tipo de energía",
         "responses": [
           {
             "response": "A: Cinética",
@@ -381,7 +381,7 @@
             "thats-right": false
           },
           {
-            "response": "B: Una opera",
+            "response": "B: Una ópera",
             "thats-right": true
           },
           {
@@ -468,7 +468,7 @@
     "options": [
       {
         "id": 1,
-        "question": "Ludwing van Beethoven se caso",
+        "question": "Ludwing van Beethoven se casó",
         "responses": [
           {
             "response": "A: Una vez",
@@ -519,12 +519,12 @@
             "thats-right": false
           },
           {
-            "response": "B: Escuela de Armamento y Seguridad",
-            "thats-right": false
+            "response": "B: Escuela de Armas y Servicios",
+            "thats-right": true
           },
           {
-            "response": "C: Escuela de Armas y Servicios",
-            "thats-right": true
+            "response": "C: Escuela de Armamento y Seguridad",
+            "thats-right": false
           },
           {
             "response": "D: Escuela de Anti-Secuestro",
@@ -534,7 +534,7 @@
       },
       {
         "id": 4,
-        "question": "La floritura es un termino principalmente",
+        "question": "La floritura es un término principalmente",
         "responses": [
           {
             "response": "A: Musical",
@@ -556,7 +556,7 @@
       },
       {
         "id": 5,
-        "question": "A estos estado europeos se les permite usar el euro bajo acuerdo especial con la unión Europea",
+        "question": "A estos estados europeos se les permite usar el euro bajo acuerdo especial con la unión europea",
         "responses": [
           {
             "response": "A: Rumania y Suecia",

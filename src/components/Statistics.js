@@ -17,7 +17,7 @@ const Statistics = () => {
     <div>
       <div className="container">
         <div className="container-help">
-          <h1>Statistics</h1>
+          <h1>Game History</h1>
 
           {users !== null ? (
             users.map((user) => (
@@ -26,7 +26,7 @@ const Statistics = () => {
               </p>
             ))
           ) : (
-            <p>No hay registros ahun</p>
+            <p>No records yet, play a game !!!</p>
           )}
 
           <button onClick={() => (window.location.href = "/")}>
