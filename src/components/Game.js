@@ -47,11 +47,14 @@ const Game = () => {
     };
 
     let arrayUsers = JSON.parse(window.localStorage.getItem("users"));
-    arrayUsers.push(user);
-    let usersJSON = JSON.stringify(arrayUsers);
-    window.localStorage.setItem("users", usersJSON);
-    alert("Registro guardado");
-    console.log(usersJSON);
+    if (arrayUsers.length > 0) {
+      arrayUsers.push(user);
+      let usersJSON = JSON.stringify(arrayUsers);
+      window.localStorage.setItem("users", usersJSON);
+      alert("Registro guardado");
+    }
+
+    console.log(arrayUsers.length);
     setNameUser("");
   };
 
