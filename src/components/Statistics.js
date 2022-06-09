@@ -5,7 +5,7 @@ const Statistics = () => {
   const [users, setUsers] = useState([]);
 
   const getData = () => {
-    const usersObject = JSON.parse(localStorage.getItem("users"));
+    const usersObject = JSON.parse(window.localStorage.getItem("users"));
     return usersObject;
   };
 
@@ -18,13 +18,10 @@ const Statistics = () => {
       <div className="container">
         <div className="container-help">
           <h1>Statistics</h1>
-
           {users.map((user) => (
-            <div key={uuidv4()}>
-              <p key={uuidv4()}>
-                Name: {user.name} Score:{user.score}{" "}
-              </p>
-            </div>
+            <p key={uuidv4()}>
+              Name: {user.name} Score:{user.score}{" "}
+            </p>
           ))}
 
           <button onClick={() => (window.location.href = "/")}>

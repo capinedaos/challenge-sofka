@@ -8,7 +8,8 @@ const Game = () => {
   const [isFinished, setIsFinished] = useState(false);
   const [random, setRandom] = useState(0);
   const [nameUser, setNameUser] = useState("");
-  const [botonActivo, setBotonActivo] = useState(true);
+  const [activeButton, setActiveButton] = useState(true);
+  const [myUserArray, setMyUserArray] = useState([]);
 
   useEffect(() => {
     const randomQuestions = Math.floor(Math.random() * 5);
@@ -38,28 +39,20 @@ const Game = () => {
     }, 1500);
   };
 
-  const handleInputChange = (e) => {
-    const text = e.target.value;
-    setNameUser(text);
-    console.log(nameUser);
-  };
-
   const saveData = () => {
-    setBotonActivo(false);
-    setNameUser("");
+    setActiveButton(false);
     let user = {
       name: nameUser,
       score: score,
     };
-    createNewUser(user);
-  };
 
-  const createNewUser = (user) => {
-    let myUserArray = JSON.parse(localStorage.getItem("users"));
-    myUserArray.push(user);
-    let usersJSON = JSON.stringify(myUserArray);
-    localStorage.setItem("users", usersJSON);
+    let arrayUsers = JSON.parse(window.localStorage.getItem("users"));
+    arrayUsers.push(user);
+    let usersJSON = JSON.stringify(arrayUsers);
+    window.localStorage.setItem("users", usersJSON);
     alert("Registro guardado");
+    console.log(usersJSON);
+    setNameUser("");
   };
 
   if (isFinished)
@@ -75,9 +68,9 @@ const Game = () => {
             type="text"
             placeholder="Ingresa tu nombre"
             value={nameUser}
-            onChange={handleInputChange}
+            onChange={(e) => setNameUser(e.target.value)}
           />
-          <button onClick={saveData} disabled={!botonActivo}>
+          <button onClick={saveData} disabled={!activeButton}>
             {" "}
             <i className="fa-solid fa-floppy-disk"></i>
           </button>
