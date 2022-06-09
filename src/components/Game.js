@@ -9,7 +9,6 @@ const Game = () => {
   const [random, setRandom] = useState(0);
   const [nameUser, setNameUser] = useState("");
   const [activeButton, setActiveButton] = useState(true);
-  // const [myUserArray, setMyUserArray] = useState([]);
 
   useEffect(() => {
     const randomQuestions = Math.floor(Math.random() * 5);
@@ -39,6 +38,8 @@ const Game = () => {
     }, 1500);
   };
 
+  const saveUser = () => (window.location.href = "/");
+
   const saveData = () => {
     setActiveButton(false);
     let user = {
@@ -46,16 +47,15 @@ const Game = () => {
       score: score,
     };
 
-    let arrayUsers = JSON.parse(window.localStorage.getItem("users"));
-    if (arrayUsers.length > 0) {
-      arrayUsers.push(user);
-      let usersJSON = JSON.stringify(arrayUsers);
-      window.localStorage.setItem("users", usersJSON);
-      alert("Registro guardado");
-    }
+    let arrayUsers = JSON.parse(window.localStorage.getItem("users")) || [];
+    arrayUsers.push(user);
+    let usersJSON = JSON.stringify(arrayUsers);
+    window.localStorage.setItem("users", usersJSON);
+    alert("Registro guardado");
 
     console.log(arrayUsers.length);
     setNameUser("");
+    saveUser();
   };
 
   if (isFinished)
@@ -78,10 +78,6 @@ const Game = () => {
             <i className="fa-solid fa-floppy-disk"></i>
           </button>
         </div>
-
-        <button onClick={() => (window.location.href = "/")}>
-          <i className="fa-solid fa-house"></i>
-        </button>
       </div>
     );
 

@@ -18,11 +18,16 @@ const Statistics = () => {
       <div className="container">
         <div className="container-help">
           <h1>Statistics</h1>
-          {users.map((user) => (
-            <p key={uuidv4()}>
-              Name: {user.name} Score:{user.score}{" "}
-            </p>
-          ))}
+
+          {users !== null ? (
+            users.map((user) => (
+              <p key={uuidv4()}>
+                Name: {user.name} Score:{user.score}{" "}
+              </p>
+            ))
+          ) : (
+            <p>No hay registros ahun</p>
+          )}
 
           <button onClick={() => (window.location.href = "/")}>
             <i className="fa-solid fa-house"></i>
