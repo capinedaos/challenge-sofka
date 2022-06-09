@@ -9,7 +9,6 @@ const Game = () => {
   const [random, setRandom] = useState(0);
   const [nameUser, setNameUser] = useState("");
   const [activeButton, setActiveButton] = useState(true);
-  const [myUserArray, setMyUserArray] = useState([]);
 
   useEffect(() => {
     const randomQuestions = Math.floor(Math.random() * 5);
