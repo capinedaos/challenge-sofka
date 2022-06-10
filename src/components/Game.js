@@ -41,21 +41,25 @@ const Game = () => {
   const saveUser = () => (window.location.href = "/");
 
   const saveData = () => {
-    setActiveButton(false);
-    let user = {
-      name: nameUser,
-      score: score,
-    };
+    if (nameUser !== "") {
+      setActiveButton(false);
+      let user = {
+        name: nameUser,
+        score: score,
+      };
 
-    let arrayUsers = JSON.parse(window.localStorage.getItem("users")) || [];
-    arrayUsers.push(user);
-    let usersJSON = JSON.stringify(arrayUsers);
-    window.localStorage.setItem("users", usersJSON);
-    alert("Registro guardado");
+      let arrayUsers = JSON.parse(window.localStorage.getItem("users")) || [];
+      arrayUsers.push(user);
+      let usersJSON = JSON.stringify(arrayUsers);
+      window.localStorage.setItem("users", usersJSON);
+      alert("Registro guardado");
 
-    console.log(arrayUsers.length);
-    setNameUser("");
-    saveUser();
+      console.log(arrayUsers.length);
+      setNameUser("");
+      saveUser();
+    } else {
+      alert("ingrese un nombre");
+    }
   };
 
   if (isFinished)

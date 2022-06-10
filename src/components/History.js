@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
+import "../assets/style/History.css";
 
-const Statistics = () => {
+const History = () => {
   const [users, setUsers] = useState([]);
 
   const getData = () => {
@@ -16,15 +17,26 @@ const Statistics = () => {
   return (
     <div>
       <div className="container">
-        <div className="container-help">
+        <div className="container-history">
           <h1>Game History</h1>
 
           {users !== null ? (
-            users.map((user) => (
-              <p key={uuidv4()}>
-                Name: {user.name} Score:{user.score}{" "}
-              </p>
-            ))
+            <table>
+              <tr>
+                <th>Name</th>
+                <th>Score</th>
+              </tr>
+              {users.map((user) => (
+                <tr>
+                  <td>
+                    <p key={uuidv4()}>{user.name}</p>
+                  </td>
+                  <td>
+                    <p key={uuidv4()}>{user.score}</p>
+                  </td>
+                </tr>
+              ))}
+            </table>
           ) : (
             <p>No records yet, play a game !!!</p>
           )}
@@ -38,4 +50,4 @@ const Statistics = () => {
   );
 };
 
-export default Statistics;
+export default History;

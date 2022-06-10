@@ -1,6 +1,6 @@
 import "./App.css";
 import { HashRouter, Routes, Route } from "react-router-dom";
-import { Home, Game, Help, Statistics } from "./components";
+import { Home, Game, Help, History } from "./components";
 import background from "../src/assets/images/imgSofka.png";
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/game" element={<Game />} />
           <Route path="/help" element={<Help />} />
-          <Route path="/statistics" element={<Statistics />} />
+          <Route path="/history" element={<History />} />
         </Routes>
       </HashRouter>
     </div>
