@@ -1,5 +1,5 @@
 .game {
-  background-color: #cecef5;
+  background-color: #cecef572;
   width: 30rem;
   min-height: 35rem;
   border-radius: 20px;
@@ -7,7 +7,7 @@
 }
 
 .game button:hover {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.422);
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 1);
   font-size: 25px;
   color: #000;
@@ -19,9 +19,10 @@
 }
 
 .options button {
-  color: #fff;
+  background-color: rgba(255, 255, 255, 0.422);
   text-align: left;
   padding: 0.5rem;
+  background-color: #695acdb2;
 }
 
 .options i {
@@ -30,7 +31,7 @@
 }
 
 .options button:hover {
-  background-color: #ffa500;
+  background-color: #ffa60072;
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 1);
   font-size: 25px;
   color: #000;
@@ -38,7 +39,7 @@
 
 .game h1 {
   text-transform: capitalize;
-  background-color: #6a5acd;
+  background-color: #cecef572;
   padding: 1rem;
   border-radius: 20px 20px 0 0;
 }
@@ -54,12 +55,12 @@
 
 .correct,
 .correct:focus {
-  background-color: #2f922f;
+  background-color: #2f922f7e;
 }
 
 .incorrect,
 .incorrect:focus {
-  background-color: #ff3333;
+  background-color: #ff333374;
 }
 
 .exit {
@@ -67,7 +68,7 @@
 }
 
 .exit:hover {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.422);
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 1);
   font-size: 25px;
   color: #000;
@@ -88,12 +89,19 @@
   width: 100%;
   padding: 5px;
   font-size: 25px;
+  background-color: rgba(255, 255, 255, 0.422);
+  border: 0;
+  outline: none;
+}
+
+.game .input input:hover {
+  background-color: rgba(255, 255, 255, 0.709);
 }
 
 .input button {
   height: 3rem;
   border-radius: 0;
-  background-color: lightgray;
+  background-color: rgba(255, 255, 255, 0.43);
   border: 1px solid rgb(131, 127, 127);
   display: flex;
   align-items: center;
@@ -103,4 +111,5 @@
 
 .input button:hover {
   box-shadow: 5px 5px 10px rgba(82, 80, 80, 0.66);
+  background-color: rgba(255, 255, 255, 0.545);
 }

@@ -5,7 +5,7 @@
 }
 
 .container-help {
-  background-color: #cecef5;
+  background-color: #cecef572;
   width: 30rem;
   min-height: 30rem;
   display: flex;
@@ -16,7 +16,7 @@
 }
 
 .container-help button:hover {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.422);
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 1);
   font-size: 25px;
   color: #000;
@@ -36,6 +36,6 @@
 
 .header {
   text-transform: capitalize;
-  background-color: #6a5acd;
+  background-color: #695acdb2;
   padding: 1rem;
 }

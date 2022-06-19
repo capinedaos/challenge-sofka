@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from "react";
-import "../assets/style/Game.css";
-import questions from "../questions.json";
+import React, { useEffect, useState } from 'react';
+import '../assets/style/Game.css';
+import questions from '../questions.json';
 
 const Game = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
   const [isFinished, setIsFinished] = useState(false);
   const [random, setRandom] = useState(0);
-  const [nameUser, setNameUser] = useState("");
+  const [nameUser, setNameUser] = useState('');
   const [activeButton, setActiveButton] = useState(true);
 
   useEffect(() => {
@@ -16,7 +16,7 @@ const Game = () => {
   }, []);
 
   const handeAnswerSubmit = (thatsRight, e) => {
-    e.target.classList.add(thatsRight ? "correct" : "incorrect");
+    e.target.classList.add(thatsRight ? 'correct' : 'incorrect');
 
     setTimeout(() => {
       if (currentQuestion === questions.length - 1) {
@@ -38,27 +38,27 @@ const Game = () => {
     }, 1500);
   };
 
-  const saveUser = () => (window.location.href = "/");
+  const saveUser = () => (window.location.href = '/');
 
   const saveData = () => {
-    if (nameUser !== "") {
+    if (nameUser !== '') {
       setActiveButton(false);
       let user = {
         name: nameUser,
         score: score,
       };
 
-      let arrayUsers = JSON.parse(window.localStorage.getItem("users")) || [];
+      let arrayUsers = JSON.parse(window.localStorage.getItem('users')) || [];
       arrayUsers.push(user);
       let usersJSON = JSON.stringify(arrayUsers);
-      window.localStorage.setItem("users", usersJSON);
-      alert("Registro guardado");
+      window.localStorage.setItem('users', usersJSON);
+      alert('Registro guardado');
 
       console.log(arrayUsers.length);
-      setNameUser("");
+      setNameUser('');
       saveUser();
     } else {
-      alert("ingrese un nombre");
+      alert('ingrese un nombre');
     }
   };
 
@@ -78,7 +78,7 @@ const Game = () => {
             onChange={(e) => setNameUser(e.target.value)}
           />
           <button onClick={saveData} disabled={!activeButton}>
-            {" "}
+            {' '}
             <i className="fa-solid fa-floppy-disk"></i>
           </button>
         </div>
@@ -102,7 +102,7 @@ const Game = () => {
           (response) => (
             <button
               key={response.response}
-              onClick={(e) => handeAnswerSubmit(response["thats-right"], e)}
+              onClick={(e) => handeAnswerSubmit(response['thats-right'], e)}
             >
               {response.response}
             </button>
