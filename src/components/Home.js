@@ -16,7 +16,7 @@ const Home = () => {
         <button>
           <i className="fa-solid fa-user"></i>
           <Link to="/history" className="link">
-            <span>Game history</span>
+            <span>Game History</span>
           </Link>
         </button>
         <button>

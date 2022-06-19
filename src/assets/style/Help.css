@@ -6,7 +6,6 @@
 
 .container-help {
   background-color: #cecef572;
-  width: 30rem;
   min-height: 30rem;
   display: flex;
   flex-direction: column;

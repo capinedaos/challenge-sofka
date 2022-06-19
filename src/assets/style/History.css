@@ -6,7 +6,7 @@
 
 .container-history {
   background-color: #cecef572;
-  width: 30rem;
+  width: 130%;
   min-height: 30rem;
   display: flex;
   flex-direction: column;

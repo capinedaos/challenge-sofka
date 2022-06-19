@@ -22,20 +22,22 @@ const History = () => {
 
           {users !== null ? (
             <table>
-              <tr>
-                <th>Name</th>
-                <th>Score</th>
-              </tr>
-              {users.map((user) => (
+              <tbody>
                 <tr>
-                  <td>
-                    <p key={uuidv4()}>{user.name}</p>
-                  </td>
-                  <td>
-                    <p key={uuidv4()}>{user.score}</p>
-                  </td>
+                  <th>Name</th>
+                  <th>Score</th>
                 </tr>
-              ))}
+                {users.map((user) => (
+                  <tr key={uuidv4()}>
+                    <td>
+                      <p>{user.name}</p>
+                    </td>
+                    <td>
+                      <p>{user.score}</p>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
             </table>
           ) : (
             <p>No records yet, play a game !!!</p>
